@@ -24,7 +24,7 @@
     <Wrapper>
       <div class="switcher hero__layout" style:--switcher-target-container-width="48rem">
         <Stack space="var(--space-m)">
-          <p class="hero__badge">Made by a kid, for kids</p>
+          <p class="hero__badge">Made by kids for kids</p>
           <h1>Find a club you will <span class="hero__mark">love.</span></h1>
           <p class="hero__lede">
             Sport, art, robots, chess and more. All the best clubs for kids, in one simple list.
