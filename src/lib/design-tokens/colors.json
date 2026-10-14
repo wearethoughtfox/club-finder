@@ -1,0 +1,15 @@
+{
+  "title": "Colors",
+  "description": "Ink for text, Paper for the page, Violet as the main accent, Sun and Coral for the funky bits.",
+  "items": [
+    { "name": "Ink", "value": "#1B1B3A" },
+    { "name": "Ink Soft", "value": "#4A4A6A" },
+    { "name": "Paper", "value": "#FBF8F3" },
+    { "name": "Air", "value": "#FFFFFF" },
+    { "name": "Violet", "value": "#5B2FD6" },
+    { "name": "Violet Light", "value": "#E9E2FB" },
+    { "name": "Sun", "value": "#FFC933" },
+    { "name": "Coral", "value": "#FF6B57" },
+    { "name": "Mint", "value": "#BDF0DE" }
+  ]
+}

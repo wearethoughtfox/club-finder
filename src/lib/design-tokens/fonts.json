@@ -1,0 +1,9 @@
+{
+  "title": "Fonts",
+  "description": "Inter variable for everything. Headings use weight 900 for the bold look.",
+  "items": [
+    { "name": "Base", "value": "'Inter', 'Helvetica Neue', Arial, sans-serif" },
+    { "name": "Display", "value": "'Inter', 'Helvetica Neue', Arial, sans-serif" },
+    { "name": "Mono", "value": "'ui-monospace', 'Cascadia Code', monospace" }
+  ]
+}
