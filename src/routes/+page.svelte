@@ -27,7 +27,7 @@
           <p class="hero__badge">Made by kids for kids</p>
           <h1>Find a club you will <span class="hero__mark">love.</span></h1>
           <p class="hero__lede">
-            Sport, art, robots, chess and more. All the best clubs for kids, in one simple list.
+            Find all the best sports clubs in the Holme Valley.
           </p>
           <Cluster gap="var(--space-s)">
             <Button href="{base}/clubs/">See the clubs</Button>
@@ -92,7 +92,7 @@
     display: inline-block;
     width: fit-content;
     background: var(--color-ink);
-    color: var(--color-paper);
+    color: var(--color-air);
     font-weight: var(--font-bold);
     font-size: var(--size-step-00);
     padding: var(--space-xs) var(--space-s);

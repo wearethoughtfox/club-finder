@@ -16,7 +16,7 @@
   .site-foot {
     padding-block: var(--space-l);
     background: var(--color-ink);
-    color: var(--color-paper);
+    color: var(--color-air);
     margin-block-start: auto;
   }
 

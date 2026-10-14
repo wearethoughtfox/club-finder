@@ -152,8 +152,7 @@ ol ::marker {
   font-weight: var(--font-bold);
 }
 
-[role='list'][class],
-[role='tablist'][class] {
+:where([role='list'][class], [role='tablist'][class]) {
   margin-block: 0;
   padding: 0;
 }

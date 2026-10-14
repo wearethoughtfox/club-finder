@@ -48,11 +48,10 @@
         </Grid>
       </Stack>
 
-      <Stack space="var(--space-s)">
-        <h2>Meet the founder</h2>
+      <Stack space="var(--space-m)">
+        <h2>Meet the founders</h2>
         <p>
-          Hi, I am <ins>[your name]</ins>. I am 10 years old and I love <ins>[your favourite things]</ins>.
-          I started {site.name} because <ins>[your reason]</ins>.
+          Hi, we are Otto, William, Max, Ben and Aurora. We're all 10 years old and we love playing sports in the Holme Valley. 
         </p>
         <Button href="{base}/clubs/">Explore the clubs</Button>
       </Stack>

@@ -1,9 +1,10 @@
 <script>
   import Stack from '$lib/components/layout/Stack.svelte';
-  import Cluster from '$lib/components/layout/Cluster.svelte';
   import Grid from '$lib/components/layout/Grid.svelte';
+  import Cluster from '$lib/components/layout/Cluster.svelte';
   import Wrapper from '$lib/components/layout/Wrapper.svelte';
   import Region from '$lib/components/layout/Region.svelte';
+  import Icon from '$lib/components/primitives/Icon.svelte';
   import { site } from '$lib/content/site.js';
   import { clubs, categories } from '$lib/content/clubs.js';
 
@@ -11,10 +12,11 @@
   const shown = $derived(selected === 'All' ? clubs : clubs.filter((c) => c.category === selected));
 
   const tints = {
-    Tech: 'var(--color-violet-light)',
-    Sport: 'var(--color-mint)',
-    Creative: 'var(--color-sun)',
-    Games: 'var(--color-air)'
+    Football: 'var(--color-mint)',
+    Swimming: 'var(--color-violet-light)',
+    Running: 'var(--color-sun)',
+    Hiking: 'var(--color-air)',
+    Climbing: 'var(--color-coral)'
   };
 </script>
 
@@ -28,7 +30,7 @@
     <Stack space="var(--space-l)">
       <Stack space="var(--space-s)">
         <h1>The clubs</h1>
-        <p class="lede">Pick a type of club, or scroll to see them all.</p>
+        <p class="lede">Pick a sport, or scroll to see them all.</p>
       </Stack>
 
       <Cluster gap="var(--space-xs)" role="group" aria-label="Filter clubs by type">
@@ -39,6 +41,7 @@
             aria-pressed={selected === category}
             onclick={() => (selected = category)}
           >
+            {#if category !== 'All'}<Icon name={category} />{/if}
             {category}
           </button>
         {/each}
@@ -51,7 +54,7 @@
       <Grid as="ul" minItemSize="18rem" gap="var(--space-l)" role="list">
         {#each shown as club (club.name)}
           <li class="club" style:--tint={tints[club.category] ?? 'var(--color-air)'}>
-            <p class="club__tag">{club.category}</p>
+            <p class="club__tag"><Icon name={club.category} size="1.4em" />{club.category}</p>
             <h2>{club.name}</h2>
             <p>{club.description}</p>
             <dl class="club__facts">
@@ -73,6 +76,9 @@
   }
 
   .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
     font: inherit;
     font-weight: var(--font-bold);
     padding: var(--space-xs) var(--space-m);
@@ -113,14 +119,17 @@
   }
 
   .club__tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
     align-self: flex-start;
     background: var(--color-ink);
-    color: var(--color-paper);
+    color: var(--color-air);
     font-size: var(--size-step-000);
     font-weight: var(--font-bold);
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    padding: 0.2em 0.8em;
+    padding: 0.3em 0.9em 0.3em 0.6em;
     border-radius: 999px;
   }
 
