@@ -7,6 +7,9 @@
   import Region from '$lib/components/layout/Region.svelte';
   import Button from '$lib/components/blocks/Button.svelte';
   import Card from '$lib/components/blocks/Card.svelte';
+  import ImageBand from '$lib/components/blocks/ImageBand.svelte';
+  import hillsImage from '$lib/images/hills.jpg';
+  import heroImage from '$lib/images/hero.jpg';
   import { site } from '$lib/content/site.js';
   import { clubs } from '$lib/content/clubs.js';
 
@@ -35,12 +38,14 @@
           </Cluster>
         </Stack>
 
-        <div class="hero__art" aria-hidden="true">
-          <span class="blob blob--violet"></span>
-          <span class="blob blob--sun"></span>
-          <span class="blob blob--coral"></span>
-          <span class="blob blob--mint"></span>
-        </div>
+        <img
+          class="hero__photo"
+          src={heroImage}
+          width="1024"
+          height="1024"
+          alt="Kids in bright football kits laughing and running after a ball on a sunny pitch"
+          fetchpriority="high"
+        />
       </div>
     </Wrapper>
   </Region>
@@ -63,6 +68,19 @@
     </Stack>
   </Wrapper>
 </Region>
+
+<ImageBand
+  image={hillsImage}
+  credit="Photo: Tim Hoggarth, CC BY-NC-SA 2.0"
+  creditHref="https://creativecommons.org/licenses/by-nc-sa/2.0/"
+>
+  <h2>Get out there and play</h2>
+  <p>
+    Every club on this list is run by people who love their sport and want you to love it too.
+    Try something new, bring a friend and see where it takes you.
+  </p>
+  <Button href="{base}/clubs/" variant="sun">Find your sport</Button>
+</ImageBand>
 
 <Region space="var(--space-xl)">
   <Wrapper>
@@ -111,59 +129,17 @@
     font-weight: var(--font-medium);
   }
 
-  .hero__art {
-    position: relative;
-    aspect-ratio: 1;
-    max-inline-size: 24rem;
+  .hero__photo {
     inline-size: 100%;
+    max-inline-size: 28rem;
+    block-size: auto;
     margin-inline: auto;
-  }
-
-  .blob {
-    position: absolute;
+    aspect-ratio: 1;
+    object-fit: cover;
     border: var(--stroke);
+    border-radius: var(--radius-m);
     box-shadow: var(--shadow-pop);
-  }
-
-  .blob--violet {
-    inset: 5% 25% 35% 0;
-    background: var(--color-violet);
-    border-radius: 50%;
-  }
-
-  .blob--coral {
-    inset: 40% 0 0 40%;
-    background: var(--color-coral);
-    border-radius: 2rem;
-    transform: rotate(8deg);
-  }
-
-  .blob--mint {
-    inset: 55% 60% 5% 5%;
-    background: var(--color-mint);
-    border-radius: 999px 999px 0 0;
-    transform: rotate(-10deg);
-  }
-
-  .blob--sun {
-    inset: 0 0 70% 70%;
-    background: var(--color-paper);
-    border-radius: 50%;
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    .blob--violet {
-      animation: float 6s ease-in-out infinite;
-    }
-    .blob--coral {
-      animation: float 7s ease-in-out infinite reverse;
-    }
-  }
-
-  @keyframes float {
-    50% {
-      translate: 0 -0.6rem;
-    }
+    transform: rotate(2deg);
   }
 
   .meta {
