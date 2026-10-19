@@ -36,7 +36,7 @@
     font-size: var(--size-step-2);
     letter-spacing: -0.03em;
     text-decoration: none;
-    color: var(--color-ink);
+    color: var(--color-air);
   }
 
   .site-head__dot {

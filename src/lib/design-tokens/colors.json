@@ -4,11 +4,11 @@
   "items": [
     { "name": "Ink", "value": "#1B1B3A" },
     { "name": "Ink Soft", "value": "#4A4A6A" },
-    { "name": "Paper", "value": "#669C35" },
+    { "name": "Paper", "value": "#225BB7" },
     { "name": "Air", "value": "#FFFFFF" },
-    { "name": "Violet", "value": "#5B2FD6" },
+    { "name": "Violet", "value": "#237CF0" },
     { "name": "Violet Light", "value": "#E9E2FB" },
-    { "name": "Sun", "value": "#FFC933" },
+    { "name": "Sun", "value": "#44D869" },
     { "name": "Coral", "value": "#FF6B57" },
     { "name": "Mint", "value": "#BDF0DE" }
   ]

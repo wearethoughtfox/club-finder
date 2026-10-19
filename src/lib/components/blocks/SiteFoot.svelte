@@ -4,11 +4,11 @@
 </script>
 
 <footer class="site-foot">
-  <div class="wrapper">
+  <div class="wrapper stack" style:--stack-space="var(--space-s)">
+    <slot />
     <p class="site-foot__credit">
       &copy; {new Date().getFullYear()} {siteName}
     </p>
-    <slot />
   </div>
 </footer>
 
@@ -23,5 +23,6 @@
   .site-foot__credit {
     font-size: var(--size-step-00);
     max-width: unset;
+    opacity: 0.8;
   }
 </style>

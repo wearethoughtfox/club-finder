@@ -33,7 +33,7 @@
 
   .nav__link {
     display: block;
-    color: var(--color-ink);
+    color: var(--color-air);
     text-decoration: none;
     font-weight: var(--font-bold);
     padding: var(--space-xs) var(--space-s);
@@ -44,9 +44,11 @@
 
   .nav__link:hover {
     background: var(--color-violet-light);
+    color: var(--color-ink);
   }
 
   .nav__link[aria-current='page'] {
+    color: var(--color-ink);
     background: var(--color-sun);
     border-color: var(--color-ink);
   }

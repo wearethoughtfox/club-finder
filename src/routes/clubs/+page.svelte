@@ -70,6 +70,11 @@
 </Region>
 
 <style>
+  h1,
+  .lede {
+    color: var(--color-air);
+  }
+
   .lede {
     font-size: var(--size-step-2);
     font-weight: var(--font-medium);

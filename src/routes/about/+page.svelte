@@ -60,6 +60,19 @@
 </Region>
 
 <style>
+  /* Text sitting straight on the page colour is white... */
+  h1,
+  h2,
+  p {
+    color: var(--color-air);
+  }
+
+  /* ...but text inside the coloured cards stays dark. */
+  .reason h3,
+  .reason p {
+    color: var(--color-ink);
+  }
+
   .lede {
     font-size: var(--size-step-2);
     font-weight: var(--font-medium);

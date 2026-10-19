@@ -11,7 +11,8 @@
   const navLinks = [
     { href: `${base}/`, label: 'Home' },
     { href: `${base}/about/`, label: 'About' },
-    { href: `${base}/clubs/`, label: 'Clubs' }
+    { href: `${base}/clubs/`, label: 'Clubs' },
+    { href: `${base}/shop/`, label: 'Shop' }
   ];
 
   onMount(() => {
@@ -32,7 +33,9 @@
   <slot />
 </main>
 
-<SiteFoot siteName={site.name} />
+<SiteFoot siteName={site.name}>
+  <p>Our headquarters are located on Dunford Road in Holmfirth. Come and visit us.</p>
+</SiteFoot>
 
 <style>
   :global(body) {

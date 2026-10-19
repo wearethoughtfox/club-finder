@@ -54,7 +54,7 @@
 <Region>
   <Wrapper>
     <Stack space="var(--space-l)">
-      <h2>Fresh from the list</h2>
+      <h2 class="featured__heading">Fresh from the list</h2>
       <Grid minItemSize="17rem" gap="var(--space-l)" role="list">
         {#each featured as club, i}
           <Card href="{base}/clubs/" tint={tints[i % tints.length]}>
@@ -142,6 +142,10 @@
     transform: rotate(2deg);
   }
 
+  .featured__heading {
+    color: var(--color-air);
+  }
+
   .meta {
     font-size: var(--size-step-00);
     font-weight: var(--font-medium);
@@ -154,7 +158,7 @@
     align-items: center;
     justify-content: space-between;
     gap: var(--space-m);
-    background: var(--color-violet);
+    background: var(--color-sun);
     color: var(--color-air);
     border: var(--stroke);
     border-radius: var(--radius-m);
