@@ -105,7 +105,7 @@
 
   .count {
     font-size: var(--size-step-00);
-    color: var(--color-ink-soft);
+    color: var(--color-air);
   }
 
   .club {
