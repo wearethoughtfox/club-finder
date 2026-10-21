@@ -16,7 +16,8 @@
     Swimming: 'var(--color-violet-light)',
     Running: 'var(--color-sun)',
     Hiking: 'var(--color-air)',
-    Climbing: 'var(--color-coral)'
+    Climbing: 'var(--color-coral)',
+    Cycling: 'var(--color-violet-light)'
   };
 </script>
 
@@ -52,7 +53,7 @@
       </p>
 
       <Grid as="ul" minItemSize="18rem" gap="var(--space-l)" role="list">
-        {#each shown as club (club.name)}
+        {#each shown as club (club)}
           <li class="club" style:--tint={tints[club.category] ?? 'var(--color-air)'}>
             <p class="club__tag"><Icon name={club.category} size="1.4em" />{club.category}</p>
             <h2>{club.name}</h2>

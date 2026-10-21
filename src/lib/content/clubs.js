@@ -23,7 +23,7 @@ export const clubs = [
     name: 'Fast Feet Juniors',
     category: 'Running',
     when: 'Wednesdays, 4:30pm',
-    where: 'Athletics Track',
+    where: 'Triasport HQ, Dunford Road',
     ages: '8 to 13',
     description: 'Sprints, relays and cross country. Run for fun or train for race day.'
   },
@@ -31,7 +31,7 @@ export const clubs = [
     name: 'Peak Explorers',
     category: 'Hiking',
     when: 'Sundays, 9:30am',
-    where: 'Meet at the Car Park',
+    where: 'Meet at the bus station',
     ages: '8 to 14',
     description: 'Monthly family-friendly walks with snacks, maps and plenty of puddles.'
   },
@@ -47,7 +47,7 @@ export const clubs = [
     name: 'Park Rangers FC',
     category: 'Football',
     when: 'Tuesdays, 4:00pm',
-    where: 'Memorial Playing Field',
+    where: 'Sands Playing Field',
     ages: '9 to 12',
     description: 'Mid-week training sessions and a friendly match at the end of each month.'
   },
@@ -55,9 +55,17 @@ export const clubs = [
     name: 'Trail Blazers',
     category: 'Running',
     when: 'Saturdays, 8:30am',
-    where: 'Woodland Park',
+    where: 'Sands Park',
     ages: '8 to 14',
     description: 'A relaxed junior parkrun group. Walk, jog or run, everyone is welcome.'
+  },
+  {
+    name: 'Hot wheels',
+    category: 'Cycling',
+    when: 'Sundays, 8:30am',
+    where: 'Triasport HQ, Dunford Road',
+    ages: '8 to 14',
+    description: 'Bring your bike and we will head off into the hills.'
   }
 ];
 
